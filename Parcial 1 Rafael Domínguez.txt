@@ -1,0 +1,19 @@
+numero=int(input("ingrese un numero: "))
+n1 = numero//100
+s1=num % 100
+n2=s1 // 10
+n3=s1 % 10
+
+if 100 <= numero <= 999:
+    if n1>n2:
+        n1, n2 = n2,n1
+    if n2>n3:
+        n2, n3 = n3, n2
+    if(n1>n2):
+        n1, n2 = n2, n1
+        
+
+    print("ascendiente:", n1, n2, n3)
+    print("descendiente:", n3, n2, n1)
+else:
+    print("no es de 3 digitos")
