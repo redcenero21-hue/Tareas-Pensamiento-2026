@@ -1,0 +1,47 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+
+#for i in range (5)
+#   print(i)
+
+#for i in range (-2, 60)
+#print(i)
+
+#for i in range(0, 20, 2)
+#print(i)
+
+#for i in range(55)
+#print(i,"."; "URL")
+
+
+#contador=0
+#for letra in "murcielagoabc123aatuivsv" :
+    #if letra=="a":
+        #contador=contador+1
+   # print(letra)
+#print("se encontraron", contador, "veces"):
+
+#suma=0
+#for i in range(1,1000000):
+    #suma=suma+i
+#print(suma)
+
+#for i in range(1,11)
+   # print("5*", i, "=",5*1):
+    
+#con=0
+#for i in range(3 , 50. 3):
+    #cont=con+1
+    #print(i)
+#print(cont)
+
+#for i in range(3, 50, 3):
+#   cont=cont+1
+#    print(i)
+#print(cont)
+
+tamaño=5
+for i in range (tamaño)
+    for j in range(tamaño)
+        print("*",end ="")
+    print("*")    G
