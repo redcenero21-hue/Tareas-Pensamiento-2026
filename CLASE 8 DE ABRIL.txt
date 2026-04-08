@@ -1,0 +1,61 @@
+#fruta=["fresa","mango","manzana"]
+#numeros=[1,2,3,4,5,6,7,8]
+#mixto=["fresa",1,2,"manzana"]
+
+#print(fruta[-2])
+
+#fruta.append("Banano")
+
+#print(fruta)
+
+#fruta.pop()
+
+#print(fruta) 
+
+#numeros=[1,2,3,4,5,6,7,8]
+
+#for i in numeros:
+#    print(i)
+
+#numeros=[1,2,3,4,5,6,7,8]
+
+#contador=0
+
+#for i in numeros:
+ #   if i % 2 ==0:
+  #      contador=contador+1
+#print(contador)
+
+#numeros=[1,2,3,4,5,6,7,8,9]
+#impares=[]
+
+#for i in numeros:
+ #   if i % 2 != 0:
+ #       impares.append(i)
+#print(impares)
+
+
+
+
+
+#numeros = [1,2,3,4,5,6,7,8,9]
+#pares = []
+#impares = []
+
+#for i in numeros:
+ #   if i % 2 != 0:
+  #      impares.append(i)
+
+#for i in numeros:
+ #   if i % 2 == 0:
+  #      pares.append(i)
+
+#print("Impares:", impares)
+#print("Pares:", pares)
+
+
+#suma_impares = sum(impares)
+#suma_pares = sum(pares)
+
+#print("Suma de impares:", suma_impares)
+#print("Suma de pares:", suma_pares)
