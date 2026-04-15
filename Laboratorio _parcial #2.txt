@@ -1,0 +1,50 @@
+                                    ##Ejercicio No.1
+#tamaño = int(input("Imgrese el tamaño del arreglo:"))
+#numero = int(input("Ingrese numero: "))
+
+#arreglo = []
+#for i in range(tamaño):  
+    #arreglo.append(numero*(i+1))
+#+print("Arreglo de multiploa: ",arreglo)
+
+                                    ##Ejercicio NO.2
+#tamaño =  int(input("Ingrese la cantidad de nombres: "))
+
+##longitudes = []
+
+#for i in range(tamaño):
+    #nombre= input("Ingrese el nombre{i+1}: ")
+    #nombres.append(len(nombre))
+    
+#print("Nombres: ",nombre)
+#print("Longitudes: ", longitudes)
+
+                                    ##Ejercicio NO.3
+#n = int(input("Cantidad de clientes: "))
+#respuestas = [int(input(f"Cliente {i+1}: ")) for i in range(n)]
+
+# Contar respuestas
+#conteo = [0, 0, 0, 0, 0]  # posiciones 0-4 representan 1-5
+
+#for r in respuestas:
+    #conteo[r-1] += 1
+
+#print("\nResultados:")
+#print("Malo:", conteo[0])
+#print("Regular:", conteo[1])
+#print("Buena:", conteo[2])
+#print("Muy Buena:", conteo[3])
+#print("Excelente:", conteo[4])
+
+# Más frecuente
+#mas_frecuente = conteo.index(max(conteo)) + 1
+#print("Más frecuente:", mas_frecuente)
+
+# Promedio
+#promedio = sum(respuestas) / n
+#print("Promedio:", round(promedio, 2))
+
+# Porcentaje menor al promedio
+#menores = sum(1 for r in respuestas if r < promedio)
+#porcentaje = (menores / n) * 100
+#print("Porcentaje menor al promedio:", round(porcentaje, 2), "%")
