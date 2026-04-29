@@ -1,0 +1,42 @@
+# 1. Pedir el tamaño de las matrices
+filas = int(input("¿Cuántas filas quieres?: "))
+columnas = int(input("¿Cuántas columnas quieres?: "))
+
+# 2. Llenar la primera matriz
+print("\nIngresa los datos de la Matriz 1:")
+matriz1 = []
+for i in range(filas):
+    fila = []
+    for j in range(columnas):
+        n = int(input(f"Posicion [{i}][{j}]: "))
+        fila.append(n)
+    matriz1.append(fila)
+
+# Llenar la segunda matriz
+print("\nIngresa los datos de la Matriz 2:")
+matriz2 = []
+for i in range(filas):
+    fila = []
+    for j in range(columnas):
+        n = int(input(f"Posicion [{i}][{j}]: "))
+        fila.append(n)
+    matriz2.append(fila)
+
+# 3. Función para restar (usando parámetros como pediste)
+def restar(m1, m2):
+    resultado = []
+    for i in range(filas):
+        fila_nueva = []
+        for j in range(columnas):
+            # Restamos los números uno por uno
+            resta = m1[i][j] - m2[i][j]
+            fila_nueva.append(resta)
+        resultado.append(fila_nueva)
+    return resultado
+
+# 0. Realizar la resta y mostrarla
+matriz_final = restar(matriz1, matriz2)
+
+print("\nLa resta de las matrices es:")
+for fila in matriz_final:
+    print(fila)
