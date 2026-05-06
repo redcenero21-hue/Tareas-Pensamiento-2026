@@ -1,0 +1,68 @@
+matriz = [
+    [2, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+suma_filas = []
+suma_columnas = []
+
+for i in range(3):
+    suma = 0
+    for j in range(3):
+        suma += matriz[i][j]
+    suma_filas.append(suma)
+
+for j in range(3):
+    suma = 0
+    for i in range(3):
+        suma += matriz[i][j]
+    suma_columnas.append(suma)
+
+print("Suma de filas:", suma_filas)
+print("Suma de columnas:", suma_columnas)
+
+def cuadrado_magico(n):
+    cuadrado = [[0]*n for _ in range(n)]
+
+    i, j = 0, n // 2  
+
+    for num in range(1, n*n + 1):
+        cuadrado[i][j] = num
+
+        nuevo_i = (i - 1) % n
+        nuevo_j = (j + 1) % n
+
+        if cuadrado[nuevo_i][nuevo_j]:
+            i = (i + 1) % n
+        else:
+            i, j = nuevo_i, nuevo_j
+
+    return cuadrado
+
+
+n = 3
+cm = cuadrado_magico(n)
+
+for fila in cm:
+    print(fila)
+
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+
+suma_filas = [sum(fila) for fila in matriz]
+
+
+suma_columnas = [sum(matriz[i][j] for i in range(3)) for j in range(3)]
+
+
+print("Matriz:")
+for fila in matriz:
+    print(fila)
+
+print("Suma de filas:", suma_filas)
+print("Suma de columnas:", suma_columnas)
