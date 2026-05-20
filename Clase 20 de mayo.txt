@@ -1,0 +1,162 @@
+# TUPLAS Y DICCIONARIOS EN PYTHON
+
+tupla_datos = ("Rojo", "Azul", "Verde")
+
+diccionario = {
+    "nombre": "Ana",
+    "edad": 22,
+    "pais": "Guatemala"
+}
+
+# ==========================================
+# FUNCIONES PARA TUPLAS
+# ==========================================
+
+def mostrar_tupla():
+    print("\nTupla actual:")
+    print(tupla_datos)
+
+
+def insertar_tupla():
+    global tupla_datos
+
+    dato = input("Ingrese un nuevo dato para la tupla: ")
+
+    lista = list(tupla_datos)
+    lista.append(dato)
+
+    tupla_datos = tuple(lista)
+
+    print("Dato agregado correctamente.")
+
+
+def modificar_tupla():
+    global tupla_datos
+
+    mostrar_tupla()
+
+    try:
+        posicion = int(input("Ingrese la posición a modificar: "))
+        nuevo = input("Ingrese el nuevo valor: ")
+
+        lista = list(tupla_datos)
+        lista[posicion] = nuevo
+
+        tupla_datos = tuple(lista)
+
+        print("Dato modificado correctamente.")
+
+    except:
+        print("Error: posición inválida.")
+
+
+def eliminar_tupla():
+    global tupla_datos
+
+    mostrar_tupla()
+
+    dato = input("Ingrese el dato a eliminar: ")
+
+    lista = list(tupla_datos)
+
+    if dato in lista:
+        lista.remove(dato)
+        tupla_datos = tuple(lista)
+        print("Dato eliminado correctamente.")
+    else:
+        print("El dato no existe.")
+
+
+
+
+def mostrar_diccionario():
+    print("\nDiccionario actual:")
+    print(diccionario)
+
+
+def insertar_diccionario():
+    clave = input("Ingrese la nueva clave: ")
+    valor = input("Ingrese el valor: ")
+
+    diccionario[clave] = valor
+
+    print("Dato agregado correctamente.")
+
+
+def modificar_diccionario():
+    mostrar_diccionario()
+
+    clave = input("Ingrese la clave a modificar: ")
+
+    if clave in diccionario:
+        nuevo = input("Ingrese el nuevo valor: ")
+        diccionario[clave] = nuevo
+        print("Dato modificado correctamente.")
+    else:
+        print("La clave no existe.")
+
+
+def eliminar_diccionario():
+    mostrar_diccionario()
+
+    clave = input("Ingrese la clave a eliminar: ")
+
+    if clave in diccionario:
+        del diccionario[clave]
+        print("Dato eliminado correctamente.")
+    else:
+        print("La clave no existe.")
+
+
+
+
+while True:
+
+    print("\n==============================")
+    print("   MENÚ PRINCIPAL")
+    print("==============================")
+    print("1. Mostrar tupla")
+    print("2. Insertar en tupla")
+    print("3. Modificar tupla")
+    print("4. Eliminar en tupla")
+    print("5. Mostrar diccionario")
+    print("6. Insertar en diccionario")
+    print("7. Modificar diccionario")
+    print("8. Eliminar en diccionario")
+    print("9. Salir")
+
+    opcion = input("\nSeleccione una opción: ")
+
+
+    if opcion == "1":
+        mostrar_tupla()
+
+    elif opcion == "2":
+        insertar_tupla()
+
+    elif opcion == "3":
+        modificar_tupla()
+
+    elif opcion == "4":
+        eliminar_tupla()
+
+  
+    elif opcion == "5":
+        mostrar_diccionario()
+
+    elif opcion == "6":
+        insertar_diccionario()
+
+    elif opcion == "7":
+        modificar_diccionario()
+
+    elif opcion == "8":
+        eliminar_diccionario()
+
+    
+    elif opcion == "9":
+        print("\nGracias por usar el programa.")
+        break
+
+    else:
+        print("Opción inválida. Intente nuevamente.")
